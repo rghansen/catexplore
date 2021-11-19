@@ -3,3 +3,4 @@
 export("%>%")
 export(cat_explore1)
 importFrom(magrittr,"%>%")
+importFrom(rlang,.data)

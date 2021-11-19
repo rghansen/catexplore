@@ -20,6 +20,7 @@
 #'@examples
 #'cat_explore1(gapminder::gapminder, lifeExp, continent)
 #'cat_explore1(gapminder::gapminder, lifeExp, continent, alpha = 0.1)
+#'@importFrom rlang .data
 #'@export
 cat_explore1 <- function(data, cont, cat1, alpha = 0.05, remove.na = TRUE) {
   if(!is.data.frame(data)) {
@@ -65,7 +66,7 @@ cat_explore1 <- function(data, cont, cat1, alpha = 0.05, remove.na = TRUE) {
 
   viz_conf <- mean_se_n %>% tidyr::drop_na() %>% ggplot2::ggplot() +
     ggplot2::geom_point(ggplot2::aes({{cat1}}, mean)) +
-    ggplot2::geom_errorbar(ggplot2::aes({{cat1}}, ymin = mean - stats::qnorm(1-alpha/2)*se, ymax = mean + stats::qnorm(1-alpha/2)*se)) +
+    ggplot2::geom_errorbar(ggplot2::aes({{cat1}}, ymin = mean - stats::qnorm(1-alpha/2)*.data$se, ymax = mean + stats::qnorm(1-alpha/2)*.data$se)) +
     ggplot2::theme_bw()
 
   my_list <- list(viz_hist, median_max_min, viz_box, mean_se_n, viz_conf)

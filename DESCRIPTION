@@ -24,4 +24,5 @@ Imports:
     tidyr,
     gapminder,
     palmerpenguins,
-    stats
+    stats,
+    rlang
