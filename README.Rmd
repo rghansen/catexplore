@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# catexplore
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of catexplore is to help streamline the first steps of data exploration for datasets with continuous explanatory variables and categorical predictor variables. It produces exploratory analyses and visualizations of data, using data wrangling and graphing tools from the tidyverse, to make troubleshooting, cleaning, and pattern-checking data quick and easy.
+
+## Installation
+
+catexplore is not on CRAN yet. You can download it from this repository using the following r command: 
+
+``` r
+devtools::install_github("rghansen/catexplore")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("rghansen/catexplore")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r basic}
+library(catexplore)
+library(gapminder)
+cat_explore1(gapminder, lifeExp, continent)
+```
+
+This package is special because it allows you to specify what confidence intervals to plot using the alpha argument
+```{r special}
+cat_explore1(gapminder, lifeExp, continent, alpha = 0.1)
+```
