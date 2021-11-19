@@ -22,18 +22,12 @@ The goal of catexplore is to help streamline the first steps of data exploration
 
 ## Installation
 
-catexplore is not on CRAN yet. You can download it from this repository using the following r command: 
+catexplore is not on CRAN yet. You can download it from the [GitHub](https://github.com/) repository using the following r command: 
 
 ``` r
 devtools::install_github("rghansen/catexplore")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("rghansen/catexplore")
-```
 ## Example
 
 This is a basic example which shows you how to solve a common problem:

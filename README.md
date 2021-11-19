@@ -15,17 +15,10 @@ quick and easy.
 
 ## Installation
 
-catexplore is not on CRAN yet. You can download it from this repository
-using the following r command:
+catexplore is not on CRAN yet. You can download it from the
+[GitHub](https://github.com/) repository using the following r command:
 
 ``` r
-devtools::install_github("rghansen/catexplore")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
 devtools::install_github("rghansen/catexplore")
 ```
 
