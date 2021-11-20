@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of catexplore is to help streamline the first steps of data
+The goal of `catexplore` is to help streamline the first steps of data
 exploration for datasets with continuous response variables and
 categorical explanatory variables. It produces exploratory analyses and
 visualizations of data, using data wrangling and graphing tools from the
@@ -15,7 +15,7 @@ quick and easy.
 
 ## Installation
 
-catexplore is not on CRAN yet. You can download it from the
+`catexplore` is not on CRAN yet. You can download it from the
 [GitHub](https://github.com/) repository using the following r command:
 
 ``` r
@@ -24,12 +24,12 @@ devtools::install_github("rghansen/catexplore")
 
 ## Example
 
-This is a basic example which shows you how a function `cat_explore1()`
-from the `catexplore` package takes a dataframe, including a continuous
-response variable and a categorical explanatory variable, and produces
-plots (boxplot and mean with confidence intervals)and summary tables
-(including maximum, minimum, median, range, mean, standard deviation,
-standard error, and group size).
+This is a basic example which shows you how the function
+`cat_explore1()` from the `catexplore` package takes a dataframe,
+including a continuous response variable and a categorical explanatory
+variable, and produces plots (boxplot and mean with confidence
+intervals)and summary tables (including maximum, minimum, median, range,
+mean, standard deviation, standard error, and group size).
 
 ``` r
 #Loading package
@@ -74,10 +74,10 @@ cat_explore1(gapminder, lifeExp, continent)
 
 <img src="man/figures/README-basic-3.png" width="100%" />
 
-This is a special example which shows you how a function (cat_explore1)
-from the catexplore package can be used to specify different sizes of
-confidence intervals using the `alpha` argument. Functions default to
-`alpha = 0.05`, producing 95% confidence intervals.
+This is a special example which shows you how the function
+`cat_explore1` from the `catexplore` package can be used to specify
+different sizes of confidence intervals using the `alpha` argument.
+Functions default to `alpha = 0.05`, producing 95% confidence intervals.
 
 ``` r
 #Applying function to gapminder dataset as in previous example, but specifying alpha = 0.1 to produce 90% confidence intervals

@@ -18,11 +18,11 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of catexplore is to help streamline the first steps of data exploration for datasets with continuous response variables and categorical explanatory variables. It produces exploratory analyses and visualizations of data, using data wrangling and graphing tools from the tidyverse, to make troubleshooting, cleaning, and pattern-checking data quick and easy.
+The goal of `catexplore` is to help streamline the first steps of data exploration for datasets with continuous response variables and categorical explanatory variables. It produces exploratory analyses and visualizations of data, using data wrangling and graphing tools from the tidyverse, to make troubleshooting, cleaning, and pattern-checking data quick and easy.
 
 ## Installation
 
-catexplore is not on CRAN yet. You can download it from the [GitHub](https://github.com/) repository using the following r command: 
+`catexplore` is not on CRAN yet. You can download it from the [GitHub](https://github.com/) repository using the following r command: 
 
 ``` r
 devtools::install_github("rghansen/catexplore")
@@ -30,7 +30,7 @@ devtools::install_github("rghansen/catexplore")
 
 ## Example
 
-This is a basic example which shows you how a function `cat_explore1()` from the `catexplore` package takes a dataframe, including a continuous response variable and a categorical explanatory variable, and produces plots (boxplot and mean with confidence intervals)and summary tables (including maximum, minimum, median, range, mean, standard deviation, standard error, and group size).
+This is a basic example which shows you how the function `cat_explore1()` from the `catexplore` package takes a dataframe, including a continuous response variable and a categorical explanatory variable, and produces plots (boxplot and mean with confidence intervals)and summary tables (including maximum, minimum, median, range, mean, standard deviation, standard error, and group size).
 
 ```{r basic}
 #Loading package
@@ -41,7 +41,7 @@ library(gapminder)
 cat_explore1(gapminder, lifeExp, continent)
 ```
 
-This is a special example which shows you how a function (cat_explore1) from the catexplore package can be used to specify different sizes of confidence intervals using the `alpha` argument. Functions default to `alpha = 0.05`, producing 95% confidence intervals. 
+This is a special example which shows you how the function `cat_explore1` from the `catexplore` package can be used to specify different sizes of confidence intervals using the `alpha` argument. Functions default to `alpha = 0.05`, producing 95% confidence intervals. 
 ```{r special}
 #Applying function to gapminder dataset as in previous example, but specifying alpha = 0.1 to produce 90% confidence intervals
 cat_explore1(gapminder, lifeExp, continent, alpha = 0.1)

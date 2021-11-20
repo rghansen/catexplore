@@ -6,7 +6,7 @@ Authors@R:
            family = "Hansen",
            role = c("aut", "cre"),
            email = "rebeccagunnhansen@gmail.com")
-Description: `catexplore` helps streamline the first steps of data exploration for datasets with continuous response variables and categorical explanatory variables. It produces exploratory analyses and visualizations of data, using data wrangling and graphing tools from the tidyverse, to make troubleshooting, cleaning, and pattern-checking data quick and easy.
+Description: catexplore helps streamline the first steps of data exploration for datasets with continuous response variables and categorical explanatory variables. It produces exploratory analyses and visualizations of data, using data wrangling and graphing tools from the tidyverse, to make troubleshooting, cleaning, and pattern-checking data quick and easy.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
