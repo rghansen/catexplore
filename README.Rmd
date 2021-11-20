@@ -30,7 +30,7 @@ devtools::install_github("rghansen/catexplore")
 
 ## Example
 
-This is a basic example which shows you how a function `cat_explore1()` from the 1catexplore` package takes a dataframe, including a continuous response variable and a categorical explanatory variable, and outputs summary tables (including maximum, minimum, median, range, mean, standard deviation, standard error, and group size) and graphs (boxplot and mean with confidence intervals).
+This is a basic example which shows you how a function `cat_explore1()` from the `catexplore` package takes a dataframe, including a continuous response variable and a categorical explanatory variable, and produces plots (boxplot and mean with confidence intervals)and summary tables (including maximum, minimum, median, range, mean, standard deviation, standard error, and group size).
 
 ```{r basic}
 #Loading package
